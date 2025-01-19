@@ -1,4 +1,4 @@
-import { Card } from '@/components/ui/card'
+import { Card } from '../../components/ui/card'
 import styles from './services.module.css'
 
 export default function ServicesPage() {
