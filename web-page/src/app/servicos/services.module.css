@@ -1,0 +1,91 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 16px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .serviceCard {
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background: white;
+  }
+  
+  .serviceCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .serviceIcon {
+    margin-bottom: 20px;
+  }
+  
+  .serviceTitle {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .serviceDescription {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .featuresList {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .featuresList li {
+    padding: 8px 0;
+    color: #555;
+    display: flex;
+    align-items: center;
+  }
+  
+  .featuresList li::before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .servicesGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

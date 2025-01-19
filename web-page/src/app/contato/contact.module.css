@@ -1,0 +1,89 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 16px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .infoCard {
+    padding: 20px;
+    text-align: center;
+    background: white;
+  }
+  
+  .iconWrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f0f4f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: #3498db;
+  }
+  
+  .infoCard h3 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+  }
+  
+  .info {
+    color: #3498db;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  .description {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .formCard {
+    padding: 40px;
+    background: white;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      grid-template-columns: 1fr;
+    }
+  
+    .contactInfo {
+      order: 2;
+    }
+  
+    .formCard {
+      order: 1;
+    }
+  }
+  
+  
