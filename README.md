@@ -51,4 +51,4 @@ pnpm install
 pnpm dev
 ```
 
-8. Visite http://localhost:3000
+7. Visite http://localhost:3000
