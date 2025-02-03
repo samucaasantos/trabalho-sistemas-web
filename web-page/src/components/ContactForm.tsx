@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import styles from './ContactForm.module.css'
+import { createLead } from '@/app/lib/actions'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -22,7 +23,14 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     // Aqui você pode adicionar a lógica para enviar o formulário
-    console.log('Form submitted:', formData)
+    const formDataToSend = new FormData();
+    console.log(formDataToSend);
+    formDataToSend.append('name', formData.name);
+    formDataToSend.append('email', formData.email);
+    formDataToSend.append('subject', formData.subject);
+    formDataToSend.append('message', formData.message);
+    console.log(formDataToSend.entries());
+    await createLead(formDataToSend);
     // Limpar o formulário após o envio
     setFormData({
       name: '',
@@ -88,6 +96,7 @@ export default function ContactForm() {
           required
           rows={5}
           className={styles.input}
+          minLength={10}
         ></textarea>
       </div>
 
