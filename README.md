@@ -2,7 +2,7 @@
 
 ## O que é
 
-Projeto desenvolvido para a disciplina MATC82 com a Professora Laíse Cavalcante no semestre de 2024.2 utilizando a linguagem Typescript, o framework Next.js e o Neon serverless como banco de dados.
+Projeto desenvolvido por Fernando Costa, Samuel Santos e Antônio Couto para a disciplina MATC82 com a Professora Laíse Cavalcante no semestre de 2024.2 utilizando a linguagem Typescript, o framework Next.js e o Neon serverless como banco de dados.
 
 Consiste de aplicação full stack para fornecer um exemplo real de implementação dos conceitos e técnicas trabalhadas na matéria, como:
 - Serviço web front end, envolvendo a interface e experiência do usuário com imagens, formulários, carrosséis e demais partes interativas construídas usando HTML 5, CSS 3 e Javascript
